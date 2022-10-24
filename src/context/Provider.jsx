@@ -3,8 +3,15 @@ import React from 'react';
 import AppContext from './Context';
 
 function Provider({ children }) {
+  const [rating, setRating] = React.useState(0);
+
+  const contextValue = React.useMemo(() => ({
+    rating,
+    setRating,
+  }));
+
   return (
-    <AppContext.Provider value="">
+    <AppContext.Provider value={contextValue}>
       { children }
     </AppContext.Provider>
   );
