@@ -1,6 +1,6 @@
 import React from 'react';
-import RatingCard from './cards/RatingCard';
-import ThankYouCard from './cards/ThankYouCard';
+import RatingCard from './components/RatingCard';
+import ThankYouCard from './components/ThankYouCard';
 import './styles/App.css';
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
 
   return (
     <div className="app">
-      { !rated ? <RatingCard /> : <ThankYouCard />}
+      { rated ? <ThankYouCard /> : <RatingCard />}
     </div>
   );
 }
