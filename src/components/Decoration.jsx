@@ -2,23 +2,27 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import AppContext from '../context/Context';
 import iconStar from '../images/icon-star.svg';
+import illustrationThankU from '../images/illustration-thank-you.svg';
 
 export default function Decoration({ isRatingCard }) {
   const { rating } = React.useContext(AppContext);
 
-  return (
-    <div className="decoration-container">
-      {
-      isRatingCard ? <img src={iconStar} alt="star" /> : (
-        <p>
-          You Selected
-          {' '}
-          {rating}
-          {' '}
-          out of 5
-        </p>
-      )
-      }
+  return isRatingCard ? (
+    <img
+      className="decoration"
+      src={iconStar}
+      alt="smartphone"
+    />
+  ) : (
+    <div>
+      <img src={illustrationThankU} alt="star" />
+      <p className="decoration">
+        You Selected
+        {' '}
+        {rating}
+        {' '}
+        out of 5
+      </p>
     </div>
   );
 }
