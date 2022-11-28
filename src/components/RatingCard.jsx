@@ -10,11 +10,6 @@ export default function RatingCard() {
   const [loading, setLoading] = React.useState(false);
 
   const { setRated } = React.useContext(Context);
-  // loading state ✅
-  // if loading return loading spinner ✅
-  // success: setRated(true) ✅
-  // failure: setRated(false) && alert ✅
-  // css
 
   const ratingParagraphContent = 'Please let us know how we did with your support request. All feedback is appreciated to help us improve our oferring!';
 

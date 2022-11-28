@@ -42,15 +42,16 @@ button {
   display: block;
   font-weight: 700;
   letter-spacing: 0.15rem;
-  margin-top: 1.25rem;
+  margin-top: 1.5rem;
   padding: 0.85rem 0;
   text-transform: uppercase;
-  transition: background-color ease 0.2s;
+  transition: all ease 0.2s;
   width: 100%;
 }
 
 button:hover {
-  background-color: var(--color-orange-600);
+  background-color: var(--color-white-500);
+  color: var(--color-orange-500);
 }
 
 input {
@@ -67,12 +68,19 @@ label {
   height: 1rem;
   justify-content: center;
   padding: 0.85rem;
-  transition: background-color ease 0.2s;
+  transition: background-color ease 0.1s;
   width: 1rem;
 }
 
-label:hover, .rating-value.selected {
-  background-color: var(--color-black-500);
+label:hover {
+  color: var(--color-white-500);
+
+  background-color: var(--color-orange-500);
+}
+
+.rating-value.selected {
+  color: var(--color-white-500);
+  background-color: var(--color-black-300);
 }
 
 .app {
@@ -87,14 +95,14 @@ label:hover, .rating-value.selected {
 .card-container {
   align-items: flex-start;
   background-color: hsl(213, 19%, 18%);
-  border-radius: 1rem;
+  border-radius: 1.5rem;
   display: flex;
   flex-direction: column;
   gap: 20px;
-  height: fit-content;
   min-height: 320px;
-  width: 290px;
-  padding: 25px;
+  width: 270px;
+  padding: 2rem;
+  padding-bottom: 1.5rem;
   position: relative;
 }
 
@@ -125,6 +133,12 @@ label:hover, .rating-value.selected {
   left: 50%;
   top: 50%;
   will-change: transform;
+}
+
+@media (min-width : 1440px) {
+  .card-container {
+    width: 330px;
+  }
 }
 
 @keyframes spinner {
