@@ -1,24 +1,25 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import AppContext from './Context';
+import Context from './Context';
 
-function Provider({ children }) {
-  const [rating, setRating] = React.useState(0);
+export default function Provider({ children }) {
+  const [ratingValue, setRatingValue] = React.useState(0);
+  const [rated, setRated] = React.useState(false);
 
-  const contextValue = React.useMemo(() => ({
-    rating,
-    setRating,
+  const value = React.useMemo(() => ({
+    ratingValue,
+    setRatingValue,
+    rated,
+    setRated,
   }));
 
   return (
-    <AppContext.Provider value={contextValue}>
+    <Context.Provider value={value}>
       { children }
-    </AppContext.Provider>
+    </Context.Provider>
   );
 }
 
 Provider.propTypes = {
   children: PropTypes.node.isRequired,
 };
-
-export default Provider;
