@@ -1,11 +1,11 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import AppContext from '../context/Context';
+import Context from '../context/Context';
 import iconStar from '../images/icon-star.svg';
 import illustrationThankU from '../images/illustration-thank-you.svg';
 
 export default function Decoration({ isRatingCard }) {
-  const { rating } = React.useContext(AppContext);
+  const { ratingValue } = React.useContext(Context);
 
   return isRatingCard ? (
     <img
@@ -19,7 +19,7 @@ export default function Decoration({ isRatingCard }) {
       <p className="decoration">
         You Selected
         {' '}
-        {rating}
+        {ratingValue}
         {' '}
         out of 5
       </p>
