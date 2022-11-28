@@ -41,7 +41,7 @@ export default function RatingCard() {
   return (
     <div className="card-container">
       <Decoration isRatingCard />
-      <Title title="How did we do?" />
+      <Title title="How did we do?" isRatingCard />
       <Paragraph content={ratingParagraphContent} />
       <form onSubmit={handleSubmit}>
         <div className="rating-container">

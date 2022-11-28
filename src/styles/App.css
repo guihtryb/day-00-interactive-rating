@@ -101,8 +101,7 @@ label:hover {
   gap: 20px;
   min-height: 320px;
   width: 270px;
-  padding: 2rem;
-  padding-bottom: 1.5rem;
+  padding: 1.5rem 2rem;
   position: relative;
 }
 
@@ -113,6 +112,7 @@ label:hover {
   display: flex;
   justify-content: center;
   padding: 12px;
+  margin-top: 12px;
 }
 
 .rating-container {
@@ -133,6 +133,11 @@ label:hover {
   left: 50%;
   top: 50%;
   will-change: transform;
+}
+
+.center {
+  text-align: center;
+  align-self: center;
 }
 
 @media (min-width : 1440px) {
