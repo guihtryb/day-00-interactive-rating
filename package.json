@@ -1,4 +1,5 @@
 {
+  "homepage": " https://guihtryb.github.io/project-00-interactive-rating/",
   "name": "interactive-rating",
   "version": "0.1.0",
   "private": true,
@@ -9,12 +10,15 @@
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.4.3",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -27,7 +31,7 @@
   "browserslist": {
     "production": [
       ">0.2%",
-      "not dead",
+       "not dead",
       "not op_mini all"
     ],
     "development": [
@@ -42,6 +46,7 @@
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jsx-a11y": "^6.6.1",
     "eslint-plugin-react": "^7.31.10",
-    "eslint-plugin-react-hooks": "^4.6.0"
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "gh-pages": "^4.0.0"
   }
 }
