@@ -14,7 +14,7 @@ export default function Decoration({ isRatingCard }) {
       alt="smartphone"
     />
   ) : (
-    <div>
+    <div className="center">
       <img src={illustrationThankU} alt="star" />
       <p className="decoration">
         You Selected
@@ -28,5 +28,9 @@ export default function Decoration({ isRatingCard }) {
 }
 
 Decoration.propTypes = {
-  isRatingCard: PropTypes.bool.isRequired,
+  isRatingCard: PropTypes.bool,
+};
+
+Decoration.defaultProps = {
+  isRatingCard: false,
 };
