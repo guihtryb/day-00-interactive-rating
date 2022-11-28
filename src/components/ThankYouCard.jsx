@@ -4,7 +4,7 @@ import Paragraph from './Paragraph';
 import Title from './Title';
 
 export default function ThankYouCard() {
-  const thankYouParagraphContent = 'We appreciate you taking the time to give a rating. If you ever need more support, don`t hesitate to get in touch!';
+  const thankYouParagraphContent = 'We appreciate you taking the time to give a rating. If you ever need more support, do not hesitate to get in touch!';
 
   return (
     <div className="card-container">
