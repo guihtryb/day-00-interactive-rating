@@ -3,7 +3,7 @@ import React from 'react';
 import Context from './Context';
 
 export default function Provider({ children }) {
-  const [ratingValue, setRatingValue] = React.useState(0);
+  const [ratingValue, setRatingValue] = React.useState(1);
   const [rated, setRated] = React.useState(false);
 
   const value = React.useMemo(() => ({
