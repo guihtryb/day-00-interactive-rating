@@ -11,8 +11,6 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
@@ -40,7 +38,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHubRepo](https://github.com/guihtryb/project-00-interactive-rating)
-- Live Site URL: [LiveSite](https://guihtryb.github.io/project-00-interactive-rating/)
+- Live Site URL: [Site](https://guihtryb.github.io/project-00-interactive-rating/)
 
 ## My process
 
@@ -93,6 +91,6 @@ Users should be able to:
 
 ## Author
 
-- Website - [GuilhermeViana](https://guihtryb.github.io/)
+- Website - [MyPortfolio](https://guihtryb.github.io/)
 - Frontend Mentor - [@guihtryb](https://www.frontendmentor.io/profile/guihtryb)
 
